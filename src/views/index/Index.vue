@@ -92,8 +92,8 @@
         </div>
         <div class="block3">
           <p>
-            COPYRIGHT © 无线电视 huidiancloud.com 广州无线电视互联网科技有限公司
-            版权所有 粤ICP备 17061972号-2
+            COPYRIGHT © 无线电视 wuxiancloud.com 广州无线电视互联网科技有限公司
+            版权所有 粤ICP备 12356972号-2
           </p>
         </div></el-footer
       >
