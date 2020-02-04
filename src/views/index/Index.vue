@@ -46,7 +46,7 @@
             <div class="block1-1">400-836-4234</div>
             <div>
               <p class="block1-2">工作日上午9:00-12:00，下午14:00-18:00</p>
-              <p class="block1-3">业务合作：server@huidiancloud.com</p>
+              <p class="block1-3">业务合作：server@wuxiandianshi.com</p>
             </div>
           </div>
           <div class="block2">
@@ -57,11 +57,11 @@
             <p>联系我们</p>
           </div>
           <div class="block2-2">
-            <p>关注"无线云联"</p>
+            <p>关注"无线电视"</p>
             <img src="@/assets/dewm.png" />
             <p></p>
             <p>无线服务尽在掌握</p>
-            <p>无线云联微信公众号</p>
+            <p>无线电视微信公众号</p>
           </div>
           <div class="block2">
             <p>快速链接</p>
@@ -92,7 +92,7 @@
         </div>
         <div class="block3">
           <p>
-            COPYRIGHT © 无线云联 huidiancloud.com 广州无线云联互联网科技有限公司
+            COPYRIGHT © 无线电视 huidiancloud.com 广州无线电视互联网科技有限公司
             版权所有 粤ICP备 17061972号-2
           </p>
         </div></el-footer
