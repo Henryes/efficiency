@@ -31,7 +31,7 @@
           <el-menu-item index="3">智慧能源</el-menu-item>
           <el-menu-item index="4"
             ><a href="https://www.ele.me" target="_blank"
-              >汇电金融</a
+              >无线金融</a
             ></el-menu-item
           >
           <el-menu-item index="5">模拟交易</el-menu-item>
@@ -50,18 +50,18 @@
             </div>
           </div>
           <div class="block2">
-            <p>了解汇电</p>
-            <p>汇电资讯</p>
+            <p>了解无线</p>
+            <p>无线资讯</p>
             <p>关于我们</p>
             <p>加入我们</p>
             <p>联系我们</p>
           </div>
           <div class="block2-2">
-            <p>关注"汇电云联"</p>
+            <p>关注"无线云联"</p>
             <img src="@/assets/dewm.png" />
             <p></p>
-            <p>汇电服务尽在掌握</p>
-            <p>汇电云联微信公众号</p>
+            <p>无线服务尽在掌握</p>
+            <p>无线云联微信公众号</p>
           </div>
           <div class="block2">
             <p>快速链接</p>
@@ -92,7 +92,7 @@
         </div>
         <div class="block3">
           <p>
-            COPYRIGHT © 汇电云联 huidiancloud.com 广州汇电云联互联网科技有限公司
+            COPYRIGHT © 无线云联 huidiancloud.com 广州无线云联互联网科技有限公司
             版权所有 粤ICP备 17061972号-2
           </p>
         </div></el-footer

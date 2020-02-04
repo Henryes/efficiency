@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="box">
-      <i class="el-icon-edit"></i>汇电电视<i class="el-icon-edit"></i>
+      <i class="el-icon-edit"></i>无线电视<i class="el-icon-edit"></i>
     </div>
     <el-menu
       :default-active="activeIndex"
