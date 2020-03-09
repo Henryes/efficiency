@@ -9,12 +9,13 @@
       <el-header>
         <el-menu
           :default-active="activeIndex"
+          
           class="el-menu-demo"
           background-color="rgb(6, 2, 51)"
           mode="horizontal"
           @select="handleSelect"
         >
-          <a href="/" class="icon"><img src="/_nuxt/img/9ef8ddb.png"/></a>
+          <a href="/" class="icon"><img  style="width:20px " src="@/assets/dewm.png"/></a>
           <el-menu-item index="1">首页</el-menu-item>
           <el-submenu index="2">
             <template slot="title">仿真与交易</template>
@@ -36,10 +37,12 @@
           >
           <el-menu-item index="5">模拟交易</el-menu-item>
           <el-menu-item index="6">关于我们</el-menu-item>
-          <el-button type="primary">联系我们</el-button>
+          <el-button type="primary" class="lxwm">联系我们</el-button>
         </el-menu>
       </el-header>
-      <el-main><router-view></router-view></el-main>
+      <el-main>
+        <router-view></router-view>
+      </el-main>
       <el-footer
         ><div class="foot">
           <div class="block1">
@@ -101,16 +104,49 @@
   </section>
 </template>
 
-<script></script>
+<script>
+export default {
+    data() {
+      return {
+        activeIndex: '1'
+      };
+    },
+    methods: {
+      handleSelect(key, keyPath) {
+        // eslint-disable-next-line no-console
+        console.log(key, keyPath);
+      }
+    }
+  }
+</script>
 
 <style scoped>
+.el-main{
+  padding: 0;
+}
+.el-footer{
+  padding: 0;
+}
 .box {
   background-color: rgb(6, 2, 51);
+  width: 100%;
+}
+.el-header{
+  width: 100%;
+  padding: 0;
+}
+.el-menu-demo{
+  width: 100%;
+  
+}
+.lxwm{
+  margin: 5px;
 }
 .el-button {
   float: right;
   padding: 15px 10px;
   text-align: center;
+  margin: 0px 15px;
 }
 .icon {
   float: left;
