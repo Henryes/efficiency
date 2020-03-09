@@ -460,7 +460,7 @@ export default {
 .ei-button {
   width: 100%;
   float: left;
-}
+} 
 
 
 </style>
