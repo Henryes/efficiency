@@ -8,11 +8,11 @@
 <div class="gjb">
     <el-row >
       <el-col :span="6"
-        ><div >
-          <div>
+        ><div>
+          <div  class="g"> 
             无线电视公众号
           </div>
-          <div>官方公众号</div>
+          <div class="g">官方公众号</div>
           <div class="gzh">
             <img src="@/assets/ewm.png" />
           </div>
@@ -20,33 +20,34 @@
       </el-col>
       <el-col :span="6"
         ><div >
-          <div>
+          <div class="g">
             无线电视公众号
           </div>
-          <div>官方公众号</div>
+          <div class="g">官方公众号</div>
+          <div class="gzh">
           <img src="@/assets/logo.png"
         
-        /></div></el-col
+        /></div></div></el-col
       >
       <el-col :span="6"
-        ><div ><div>
+        ><div ><div class="g">
           无线电视公众号
         </div>
-        <div>官方公众号</div>
-        <img src="@/assets/xcx.png"
-      /></div></el-col>
+        <div class="g">官方公众号</div>
+        <div class="gzh"><img src="@/assets/xcx.png"
+      /></div></div></el-col>
       <el-col :span="6"
-        ><div><div>
+        ><div ><div class="g">
           无线电视公众号
         </div>
-        <div>官方公众号</div>
+        <div class="g">官方公众号</div><div class="gzh">
         <img src="@/assets/ewm.png"
-      /></div></el-col>
+      /></div></div></el-col>
     </el-row></div>
     <div class="foot">
-      <i
+      <div class="foot1"
         >现在,就让业务连接起来,驱动产能更高效
-        <div class="foot2"><el-button plain>联系我们</el-button></div></i
+        <div class="foot2"><el-button plain>联系我们</el-button></div></div
       >
     </div>
   </section>
@@ -57,16 +58,23 @@ export default {};
 </script>
 
 <style scoped>
+.el-icon-s-cooperation{
+  padding: 8px;
+}
 .gjb
 {
-  padding-left: 100px;
+  padding-left: 0px;
 }
 .img {
-  width: 20px;
+  width : 20px;
 }
 .gzh {
-  width: 20px;
-  height: 20px;
+  display: flex;
+  justify-content: center;
+}
+.g{
+  display: flex;
+  justify-content: center;
 }
 .block {
   display: flex;
@@ -75,16 +83,25 @@ export default {};
   padding-block-end: 100px;
 }
 .foot {
-  padding: 10px;
+  padding: 18px 0px 0px 0px;
+  margin:0px 0px;
   height: 150px;
+   color:#fff;
   display: flex;
   font-size: 30px;
   justify-content: center;
   background: url(bg.png) center 0;
 }
+.foot1{
+  padding:20px 0px 0px 0px;
+}
 .foot2 {
-  padding: 20px;
+  padding: 20px 0px 0px 0px;
   display: flex;
+   color:#fff;
   justify-content: center;
+}
+.i{
+  padding: 20px;
 }
 </style>

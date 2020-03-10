@@ -187,7 +187,7 @@
           ><el-col :span="6" class="sbox">
             <div>北京启力电力发展有限公司</div>
 
-            <div>324133</div>
+            <div>35624133</div>
           </el-col>
         </div>
       </el-row>
@@ -411,23 +411,25 @@ export default {
 .Lbox {
   background-color: #cee4f4;
   height: 30px;
-  margin: 10px 10px;
-  padding: 20px 0;
+  margin: 50px 10px 20px 0px;
+  padding: 15px 10px;
 }
 .Rbox {
   background-color: #cee4f4;
   height: 30px;
-  margin: 10px 10px;
-  padding: 20px 0;
+  margin: 50px 0px 20px 10px;
+  padding: 15px 10px;
 }
 .leftbox {
   float: right;
+  font-family: YouYuan ;
+	font-size: 12px;
 }
 .sbox {
-  margin-top: 10px;
-
-  padding: 15px;
-  width: 25%;
+  margin: 10px 9px;
+float:center;
+  padding: 10px;
+  width: 23.7%;
   border-style: solid;
   border-width: 1px;
   border-color: #e4eaf6;

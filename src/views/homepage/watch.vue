@@ -141,6 +141,10 @@ export default {
 </script>
 
 <style scoped>
+.el-icon-eleme{
+  padding: 8px;
+
+}
 .box {
   display: flex;
   flex-direction: row;

@@ -15,7 +15,7 @@
           mode="horizontal"
           @select="handleSelect"
         >
-          <a href="/" class="icon"><img  style="width:20px " src="@/assets/dewm.png"/></a>
+          <a href="/" class="icon"><img  style="width:20px " src="@/assets/lb2.png"/></a>
           <el-menu-item index="1">首页</el-menu-item>
           <el-submenu index="2">
             <template slot="title">仿真与交易</template>
@@ -61,7 +61,7 @@
           </div>
           <div class="block2-2">
             <p>关注"无线电视"</p>
-            <img src="@/assets/dewm.png" />
+            <img  class="img" src="@/assets/dewm.png" />
             <p></p>
             <p>无线服务尽在掌握</p>
             <p>无线电视微信公众号</p>
@@ -90,7 +90,7 @@
             <p>南方能源监管办</p>
             <p>北京电力交易中心</p>
             <p>北极星电力网</p>
-            <p>中国电力企业联合会u</p>
+            <p>中国电力企业联合会</p>
           </div>
         </div>
         <div class="block3">
@@ -190,5 +190,13 @@ export default {
   display: flex;
   border-top: 1px solid #fff;
  justify-content:center;
+}
+.img{
+  width:80px;
+  height:75px;
+display: flex;
+justify-content: center;
+  margin:0px 0px;
+  padding: 0px 0px;
 }
 </style>
