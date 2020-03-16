@@ -9,13 +9,14 @@
       <el-header>
         <el-menu
           :default-active="activeIndex"
-          
           class="el-menu-demo"
           background-color="rgb(6, 2, 51)"
           mode="horizontal"
           @select="handleSelect"
         >
-          <a href="/" class="icon"><img  style="width:20px " src="@/assets/lb2.png"/></a>
+          <a href="/" class="icon"
+            ><img style="width:25px " src="@/assets/lb2.png"
+          /></a>
           <el-menu-item index="1">首页</el-menu-item>
           <el-submenu index="2">
             <template slot="title">仿真与交易</template>
@@ -46,7 +47,7 @@
       <el-footer
         ><div class="foot">
           <div class="block1">
-            <div class="block1-1">400-836-4234</div>
+            <div class="block1-1">400-896-6236</div>
             <div>
               <p class="block1-2">工作日上午9:00-12:00，下午14:00-18:00</p>
               <p class="block1-3">业务合作：server@wuxiandianshi.com</p>
@@ -57,21 +58,22 @@
             <p>无线资讯</p>
             <p>关于我们</p>
             <p>加入我们</p>
-            <p>联系我们</p>
+            <p class="block2-1">联系我们</p>
           </div>
           <div class="block2-2">
             <p>关注"无线电视"</p>
-            <img  class="img" src="@/assets/dewm.png" />
+            <div class="Img"><img class="img" src="@/assets/dewm.png" /></div>
             <p></p>
             <p>无线服务尽在掌握</p>
-            <p>无线电视微信公众号</p>
+            <p class="block2-1"> 无线电视微信公众号</p>
+            
           </div>
           <div class="block2">
             <p>快速链接</p>
             <p>国家法案委</p>
             <p>广东电力交易中心</p>
             <p>国家电网</p>
-            <p>国家能源网</p>
+            <p class="block2-1">国家能源网</p>
           </div>
           <div class="block2">
             <div></div>
@@ -106,40 +108,39 @@
 
 <script>
 export default {
-    data() {
-      return {
-        activeIndex: '1'
-      };
-    },
-    methods: {
-      handleSelect(key, keyPath) {
-        // eslint-disable-next-line no-console
-        console.log(key, keyPath);
-      }
+  data() {
+    return {
+      activeIndex: "1"
+    };
+  },
+  methods: {
+    handleSelect(key, keyPath) {
+      // eslint-disable-next-line no-console
+      console.log(key, keyPath);
     }
   }
+};
 </script>
 
 <style scoped>
-.el-main{
+.el-main {
   padding: 0;
 }
-.el-footer{
+.el-footer {
   padding: 0;
 }
 .box {
   background-color: rgb(6, 2, 51);
   width: 100%;
 }
-.el-header{
+.el-header {
   width: 100%;
   padding: 0;
 }
-.el-menu-demo{
+.el-menu-demo {
   width: 100%;
-  
 }
-.lxwm{
+.lxwm {
   margin: 5px;
 }
 .el-button {
@@ -164,23 +165,30 @@ export default {
   border-right: 1px solid #fff;
 }
 .block1-1 {
-  padding: 15px 20px;
+  font-size: 20px;
+  padding: 15px 30px;
 }
 .block1-2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 13px;
   padding: 10px 30px;
 }
 .block1-3 {
+  font-size: 13px;
   padding: 10px 30px;
 }
 .block2 {
   display: flex;
   flex-direction: column-reverse;
-  padding: 0 10px;
+  padding: 0 40px;
   color: aliceblue;
+}
+.block2-1{
+  font-size: 20px;
 }
 .block2-2 {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   padding: 0 10px;
   color: aliceblue;
 }
@@ -189,14 +197,19 @@ export default {
   color: #fff;
   display: flex;
   border-top: 1px solid #fff;
- justify-content:center;
+  justify-content: center;
 }
-.img{
-  width:80px;
-  height:75px;
-display: flex;
-justify-content: center;
-  margin:0px 0px;
+.img {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px;
   padding: 0px 0px;
 }
-</style>
+.Img{
+  display: flex;
+  justify-content: center;
+  width: 100 px;
+}
+ </style>

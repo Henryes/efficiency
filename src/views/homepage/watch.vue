@@ -152,7 +152,7 @@ export default {
   height: 60px;
   font-size: 36px;
   
-  padding-top:70px;
+  padding-top:140px;
 }
 .column {
   font-size: 20px;

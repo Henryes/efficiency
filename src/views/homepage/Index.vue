@@ -1,3 +1,4 @@
+
 <template>
   <section>
     <!-- <el-steps :active="1" align-center>
@@ -19,7 +20,19 @@
       ></el-step>
     </el-steps> -->
     <div class="dcheck">
-      <span class="check">交易动态</span>
+      <span class="check"><img
+        src="@/views/homepage/picture/leftdt.png"
+        width="24"
+        height="60"
+        
+        class="left-icon"
+      />交易动态<img
+        src="@/views/homepage/picture/dt.png"
+        width="24"
+        height="60"
+        
+        class="right-icon"
+      /></span>
       <div class="check2">
         <i class="el-icon-date"></i>现货市场负荷&价格预测
       </div>
@@ -37,7 +50,9 @@
               :style="{ width: '600px', height: '300px' }"
             ></div></div
         ></el-col>
-        <el-col :span="10"><el-calendar style="height:300px"   v-model="value"> </el-calendar></el-col>
+        <el-col :span="10"
+          ><el-calendar style="height:300px" v-model="value"> </el-calendar
+        ></el-col>
       </el-row>
       <el-row
         ><el-col :span="16">
@@ -61,12 +76,26 @@
       <el-col :span="6"></el-col>
       <el-col :span="6"></el-col>
     </el-row> -->
-    <div class="check3">交易信息</div>
+    <div class="check3"><img
+        src="@/views/homepage/picture/leftdt.png"
+        width="24"
+        height="60"
+        
+        class="left-icon"
+      />
+      交易信息
+      <img
+        src="@/views/homepage/picture/dt.png"
+        width="24"
+        height="60"
+        class="right-icon"
+      />
+    </div>
     <div class="dbox">
       <div class="block">
-        <div class="demonstration"
-          ><i class="el-icon-s-data"></i>发电企业竞价成交电量</div
-        >
+        <div class="demonstration">
+          <i class="el-icon-s-data"></i>发电企业竞价成交电量
+        </div>
         <el-carousel height="150px">
           <el-carousel-item v-for="item in 3" :key="item">
             <h3 class="medium">{{ item }}</h3>
@@ -203,13 +232,19 @@ import tool from "@/views/homepage/tool.vue";
 import echarts from "echarts";
 
 export default {
+
+
+	
+
   name: "homepage",
   components: { watch, tool },
   data() {
     return {
-      value: new Date()
+      value: new Date(),
+      display: true
     };
   },
+  
 
   // mounted() {
   // alert("mouted");
@@ -381,9 +416,27 @@ export default {
 </script>
 
 <style scoped>
+.left-icon{
+  padding-right: 10px;
+}
+
+.right-icon {
+   padding-left: 10px;
+  animation: 1s linear infinite alternate-reverse;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  
+}
+
+
+
 .dcheck {
   margin: 0 150px;
-  
 }
 .check {
   display: flex;
@@ -392,16 +445,16 @@ export default {
   padding: 55px 0;
 }
 .check2 {
-  font-size: 18px;
+  font-size: 20px;
+  padding: 5px;
 }
-.check3{
+.check3 {
   display: flex;
   justify-content: center;
   font-size: 40px;
-  padding-top: 60px ;
-
+  padding-top: 80px;
 }
-.demonstration{
+.demonstration {
   font-size: 20px;
   padding: 10px;
 }
@@ -422,12 +475,12 @@ export default {
 }
 .leftbox {
   float: right;
-  font-family: YouYuan ;
-	font-size: 12px;
+  font-family: YouYuan;
+  font-size: 12px;
 }
 .sbox {
   margin: 10px 9px;
-float:center;
+  float: center;
   padding: 10px;
   width: 23.7%;
   border-style: solid;
@@ -462,7 +515,13 @@ float:center;
 .ei-button {
   width: 100%;
   float: left;
-} 
-
-
+}
+@keyframes animate1 {
+   0% {
+    transform: translateY(0);}
+  
+  100% {
+    transform: translateY(-0.625rem)
+  }
+}
 </style>
